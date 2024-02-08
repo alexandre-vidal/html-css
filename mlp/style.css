@@ -37,6 +37,9 @@ html{
     border-radius: 15px;
 }
 
+#spike {
+    padding-bottom: 30px;
+}
 
 #header {
     text-align: center;
