@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Quicksand:wght@500&display=swap');
+
+@keyframes fadein {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+html{
+    background-image: url(images/background/flutterhouse.png);
+    background-color: black;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
+    color: white;
+}
+
+.body{
+    animation: fadein 1s;
+    backdrop-filter: blur(4px);
+    margin-left: 22%;
+    margin-right: 22%;
+    margin-top: 3%;
+    padding: 5px;
+    background-color: rgba(163, 78, 136, 0.596);
+    box-shadow: rgba(255, 135, 217, 0.612) 3px 3px 10px, rgb(255, 135, 217, 0.612) -3px -3px 10px, rgb(255, 135, 217, 0.612) -3px 3px 10px, rgb(255, 135, 217, 0.612) 3px -3px 10px;
+    border: solid rgba(255, 135, 217);
+    border-radius: 15px;
+}
+
+#betcha {
+    border-radius: 15px;
+}
+
+
+#header {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 25px;
+    animation: fadein 1s;
+}
+
+#footer {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 25px;
+    animation: fadein 1s;
+}
+
+p {    
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 3%;
+    text-align: justify;
+    text-shadow: black 1.5px 1.5px;
+    font-size: larger;
+    animation: fadein 1s;
+}
+
+figcaption {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 1%;
+    text-align: center;
+    text-shadow: black 1.5px 1.5px;
+    font-style: italic;
+    animation: fadein 1s;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    text-shadow: black 1.5px 1.5px;
+    font-style: italic;
+    -webkit-filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+    animation: fadein 1s;
+}
+
+#title {
+    margin-top: -0.1%;
+    margin-bottom: -0.1%;
+    animation: fadein 2s;
+    font-family: 'Indie Flower', cursive;
+    font-size: 100px;
+    text-decoration: underline;
+    font-style: italic;
+    text-align: center;
+    text-shadow: rgb(255, 0, 174) 0px 0px 10px, rgb(255, 0, 174) 0px 0px 10px;
+}
+
+a:visited {
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: blue;
+}
+
+@media screen and (width: 320px) {
+    #title {
+        margin-top: -0.1%;
+        margin-bottom: -0.1%;
+        font-family: 'Indie Flower', cursive;
+        font-size: 30px;
+        text-decoration: underline;
+        font-style: italic;
+        text-align: center;
+        text-shadow: rgb(255, 0, 174) 0px 0px 10px, rgb(255, 0, 174) 0px 0px 10px;
+    }
+
+    p {    
+        font-family: 'Quicksand', sans-serif;
+        text-align: justify;
+        text-shadow: black 1.5px 1.5px;
+        font-size: small;
+    }
+
+    .body{
+        padding-top: 5%;
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    #betcha {
+        margin-top: 10%;
+        height: 180px;
+    }
+
+    img {
+        height: 90px;
+    }
+
+    figcaption {
+        font-size: smaller;
+        padding-top: 2%;
+        padding-left: 15%;
+        padding-right: 15%;
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (width: 480px) {
+    #title {
+        margin-top: -0.1%;
+        margin-bottom: -0.1%;
+        font-family: 'Indie Flower', cursive;
+        font-size: 30px;
+        text-decoration: underline;
+        font-style: italic;
+        text-align: center;
+        text-shadow: rgb(255, 0, 174) 0px 0px 10px, rgb(255, 0, 174) 0px 0px 10px;
+    }
+
+    p {    
+        font-family: 'Quicksand', sans-serif;
+        text-align: justify;
+        text-shadow: black 1.5px 1.5px;
+        font-size: small;
+    }
+
+    .body{
+        padding-top: 5%;
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    #betcha {
+        margin-top: 10%;
+        height: 180px;
+    }
+
+    img {
+        height: 90px;
+    }
+
+    figcaption {
+        font-size: smaller;
+        padding-top: 2%;
+        padding-left: 15%;
+        padding-right: 15%;
+        margin-bottom: 5%;
+    }
+}
