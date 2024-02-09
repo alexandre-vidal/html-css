@@ -4,10 +4,57 @@
     margin-top: 30px;
 }
 
-.youtube-link {
+.youtube-link .icon {
     width: 20px;
-    color: #222;
+    color: red;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.youtube-link {
     font-size: 18px;
     font-family: "Roboto", sans-serif;
+    color: #222;
     line-height: 1.8;
+    display: flex;
+    gap: 16px;
+    margin: 8px 0;
+    padding: 4px 32px;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.youtube-link:hover{
+    background: #efefef;
+}
+
+.youtube-player-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 400ms ease;
+}
+
+.youtube-player-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.youtube-player-popup {
+    position: fixed;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    transition: all 400ms ease;
+}
+
+.youtube-player-overlay.active .youtube-player-popup {
+    transform: translate(-50%, 0);
+}
+
+.youtube-player-popup iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
 }
