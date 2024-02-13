@@ -1,245 +1,323 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Quicksand:wght@500&display=swap');
+/* importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Quicksand:wght@500&display=swap");
 
+@font-face {
+  font-family: "Equestria";
+  src: url("/fonts/Equestria.ttf.woff") format("woff"),
+    url("/fonts/Equestria.ttf.svg#Equestria") format("svg"),
+    url("/fonts/Equestria.ttf.eot"),
+    url("/fonts/Equestria.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* animation keyframes */
 @keyframes fadein {
-    0%{
-        opacity:0;
-    }
-    100%{
-        opacity: 100;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
 }
 
-html{
-    background-image: url(images/background/flutterhouse.png);
-    background-color: black;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: fixed;
-    background-attachment: fixed;
-    color: white;
-}
-
-.body{
-    animation: fadein 1s;
-    backdrop-filter: blur(4px);
-    margin-left: 22%;
-    margin-right: 22%;
-    margin-top: 3%;
-    padding: 5px;
-    background-color: rgba(163, 78, 136, 0.596);
-    box-shadow: rgba(255, 135, 217, 0.612) 3px 3px 10px, rgb(255, 135, 217, 0.612) -3px -3px 10px, rgb(255, 135, 217, 0.612) -3px 3px 10px, rgb(255, 135, 217, 0.612) 3px -3px 10px;
-    border: solid rgba(255, 135, 217);
-    border-radius: 15px;
+/* ids */
+#mane6 {
+  height: 250px;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 #betcha {
-    border-radius: 15px;
+  border-radius: 15px;
 }
 
 #spike {
-    padding-bottom: 30px;
+  width: 150px;
 }
 
 #header {
-    text-align: center;
-    margin-top: 2%;
-    font-size: 25px;
-    animation: fadein 1s;
-}
-
-#footer {
-    text-align: center;
-    margin-top: 2%;
-    font-size: 25px;
-    animation: fadein 1s;
-}
-
-p {    
-    font-family: 'Quicksand', sans-serif;
-    margin-left: 6%;
-    margin-right: 6%;
-    margin-bottom: 3%;
-    text-align: justify;
-    text-shadow: black 1.5px 1.5px;
-    font-size: larger;
-    animation: fadein 1s;
-}
-
-figcaption {
-    font-family: 'Quicksand', sans-serif;
-    margin-top: 1%;
-    text-align: center;
-    text-shadow: black 1.5px 1.5px;
-    font-style: italic;
-    animation: fadein 1s;
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Quicksand', sans-serif;
-    text-align: center;
-    text-shadow: black 1.5px 1.5px;
-    font-style: italic;
-    -webkit-filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
-    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
-    animation: fadein 1s;
+  text-align: center;
+  margin-top: 2%;
+  font-size: 25px;
 }
 
 #title {
-    margin-top: -0.1%;
-    margin-bottom: -0.1%;
-    animation: fadein 2s;
-    font-family: 'Indie Flower', cursive;
-    font-size: 100px;
-    text-decoration: underline;
-    font-style: italic;
-    text-align: center;
-    text-shadow: rgb(255, 0, 174) 0px 0px 10px, rgb(255, 0, 174) 0px 0px 10px;
+  margin-top: -0.1%;
+  margin-bottom: -0.1%;
+  animation: fadein 2s;
+  font-family: "Equestria";
+  font-size: 100px;
+  text-decoration: underline;
+  text-align: center;
+  text-shadow: rgb(255, 0, 174) 0px 0px 10px, rgb(255, 0, 174) 0px 0px 10px;
+  color: white;
+  transition: 200ms ease-out;
 }
 
-a:visited {
-    color: white;
+#title:hover {
+  color: rgb(255, 80, 200);
+  text-shadow: white 0px 0px 10px, white 0px 0px 10px;
 }
 
-a {
-    color: white;
+#title-url {
+  text-decoration: none;
 }
 
-a:hover {
-    color: red;
+/* classes */
+.body {
+  animation: fadein 1s;
+  backdrop-filter: blur(4px);
+  margin-left: 22%;
+  margin-right: 22%;
+  margin-top: 3%;
+  padding: 5px;
+  background-color: rgba(163, 78, 136, 0.596);
+  box-shadow: rgba(255, 135, 217, 0.612) 3px 3px 10px,
+    rgb(255, 135, 217, 0.612) -3px -3px 10px,
+    rgb(255, 135, 217, 0.612) -3px 3px 10px,
+    rgb(255, 135, 217, 0.612) 3px -3px 10px;
+  border: solid rgba(255, 135, 217);
+  border-radius: 15px;
 }
 
-a:active {
-    color: blue;
-}
-
-@media screen and (width: 320px) {
-    #title {
-        margin-top: -0.1%;
-        margin-bottom: -0.1%;
-        font-family: 'Indie Flower', cursive;
-        font-size: 30px;
-        text-decoration: underline;
-        font-style: italic;
-        text-align: center;
-        text-shadow: rgb(255, 0, 174) 0px 0px 10px, rgb(255, 0, 174) 0px 0px 10px;
-    }
-
-    p {    
-        font-family: 'Quicksand', sans-serif;
-        text-align: justify;
-        text-shadow: black 1.5px 1.5px;
-        font-size: small;
-    }
-
-    .body{
-        padding-top: 5%;
-        margin-top: 5%;
-        margin-left: 3%;
-        margin-right: 3%;
-    }
-
-    #betcha {
-        margin-top: 10%;
-        height: 180px;
-    }
-
-    img {
-        height: 90px;
-    }
-
-    figcaption {
-        font-size: smaller;
-        padding-top: 2%;
-        padding-left: 15%;
-        padding-right: 15%;
-        margin-bottom: 5%;
-    }
-}
-
-@media screen and (width: 480px) {
-    #title {
-        margin-top: -0.1%;
-        margin-bottom: -0.1%;
-        font-family: 'Indie Flower', cursive;
-        font-size: 30px;
-        text-decoration: underline;
-        font-style: italic;
-        text-align: center;
-        text-shadow: rgb(255, 0, 174) 0px 0px 10px, rgb(255, 0, 174) 0px 0px 10px;
-    }
-
-    p {    
-        font-family: 'Quicksand', sans-serif;
-        text-align: justify;
-        text-shadow: black 1.5px 1.5px;
-        font-size: small;
-    }
-
-    .body{
-        padding-top: 5%;
-        margin-top: 5%;
-        margin-left: 3%;
-        margin-right: 3%;
-    }
-
-    #betcha {
-        margin-top: 10%;
-        height: 180px;
-    }
-
-    img {
-        height: 90px;
-    }
-
-    figcaption {
-        font-size: smaller;
-        padding-top: 2%;
-        padding-left: 15%;
-        padding-right: 15%;
-        margin-bottom: 5%;
-    }
-}
-
+/* youtube pop-up */
 .youtube-link {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .youtube-link:hover {
-    cursor: pointer;
-    color: red;
+  cursor: pointer;
+  color: red;
 }
 
 .youtube-player-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.6);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 400ms ease;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 400ms ease;
 }
 
 .youtube-player-overlay.active {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .youtube-player-popup {
-    position: fixed;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-    transition: all 400ms ease;
+  position: fixed;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  transition: all 400ms ease;
 }
 
 .youtube-player-overlay.active .youtube-player-popup {
-    transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 
 .youtube-player-popup iframe {
-    width: 100%;
-    aspect-ratio: 16/9;
-}   
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+/* tags */
+html {
+  background-image: url(images/background/flutterhouse.png);
+  background-color: black;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-bottom: 3%;
+  text-align: justify;
+  text-shadow: black 1.5px 1.5px;
+  font-size: larger;
+  animation: fadein 1s;
+}
+
+figcaption {
+  font-family: "Quicksand", sans-serif;
+  margin-top: 1%;
+  text-align: center;
+  text-shadow: black 1.5px 1.5px;
+  font-style: italic;
+  animation: fadein 1s;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  text-shadow: black 1.5px 1.5px;
+  font-style: italic;
+  -webkit-filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+  filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+  animation: fadein 1s;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+/* media queries */
+
+@media (min-width: 320px) and (max-width: 479px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  #spike {
+    height: auto;
+  }
+
+  p {
+    font-size: small;
+  }
+
+  .body {
+    padding-top: 5%;
+    margin-top: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  #betcha {
+    height: 180px;
+  }
+
+  img {
+    height: 90px;
+  }
+
+  #title {
+    font-size: 55px;
+    padding-bottom: 30px;
+  }
+
+  .body {
+    width: 90%;
+    margin: auto;
+  }
+
+  p {
+    font-size: medium;
+  }
+
+  #mane6 {
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+  }
+
+  #betcha {
+    padding-top: 10px;
+  }
+
+  figcaption {
+    font-size: medium;
+    padding-top: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 5%;
+  }
+}
+@media (min-width: 480px) and (max-width: 599px) {
+  /* smartphones, Android phones, landscape iPhone */
+
+  .body {
+    padding-top: 5%;
+    margin-top: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  #betcha {
+    margin-top: 10%;
+    height: 180px;
+  }
+
+  img {
+    height: 90px;
+  }
+
+  figcaption {
+    font-size: smaller;
+    padding-top: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 5%;
+  }
+}
+@media (min-width: 600px) and (max-width: 799px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  #mane6 {
+    height: 150px;
+    padding-top: 0px;
+  }
+
+  #title {
+    font-size: 55px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  .body {
+    padding-top: 5%;
+    margin-top: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  #betcha {
+    padding-top: 2%;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1280px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  #mane6 {
+    height: 200px;
+    padding-top: 0px;
+  }
+
+  .body {
+    padding-top: 5%;
+    margin-top: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  #title {
+    font-size: 80px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  #betcha {
+    margin-top: 0%;
+    height: 250px;
+  }
+
+  #spike {
+    width: 200px;
+  }
+
+  p {
+    font-size: large;
+  }
+
+  figcaption {
+    font-size: medium;
+    margin-bottom: 0%;
+  }
+}
